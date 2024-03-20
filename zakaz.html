@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оставить заявку</title>
+<link rel="shortcut icon" href="img/zayavka.png" type="image/x-icon">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+  }
+  button {
+            text-decoration: none;
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: dimgray;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+ button:hover {
+            transform: scale(1.02);
+        }
+  .form-container {
+    width: 80%;
+    max-width: 600px;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .form-header {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <div class="form-header">
+    <h2>Оставить заявку</h2>
+  </div>
+  <form action="/submit_form" method="post">
+    <div class="form-group">
+      <label for="firstName">Имя</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Имя">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Фамилия</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Фамилия">
+    </div>
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input type="text" id="phone" name="phone" placeholder="+7900 000-00-00">
+    </div>
+    <div class="form-group">
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" placeholder="Электронная почта">
+    </div>
+    <div class="form-group">
+      <label for="rentalOptions">Выбор мастера</label>
+      <select id="rentalOptions" name="rentalOptions">
+        <option value="withDriver">Леонид</option>
+        <option value="withoutDriver">Максим</option>
+        <option value="withoutDriver">Руслан</option>
+      </select>
+    </div>
+    <button onclick="alert('Ваша заявка успешно оставлена!');"><a href="./index.html"style="text-decoration: none;color:white; font-size: 20px;">Оставить заявку</a></button>
+  </form>
+</div>
+<script type="">
+//   function myButton() {
+
+// alert('Ваша заявка успешно оставлена!');
+
+// }
+</script>
+</body>
+</html>

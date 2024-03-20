@@ -1,0 +1,442 @@
+body{
+	overflow-x: hidden;
+
+}
+
+
+.fon{
+	width: 102%;
+	height: 280%;
+	background-color: black;
+	position: absolute;	top: -10px; left: -10px;
+}	
+.cont{
+	width:80%;
+	height: 100%;
+	background-color: black;
+	margin: 0px auto;
+	justify-content: center;
+}
+.shapka{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+.logo{
+	height: 90px;
+	color: white;
+	padding-top: 45px;
+	padding-left: 100px;
+	font-family: Arial Black;
+	font-size: 25px;
+	justify-content: center;
+	transition-duration: 0.3s;
+}
+
+.nav1{
+	padding-top: 55px;
+	padding-left: 65px;
+	font-size: 19px;
+	text-decoration: none;
+	color: white;
+	justify-content: center;
+}
+.body{
+	width: 100%;
+	height: 900px;
+	background-color: black;
+}
+.img1{
+	width: 100%;
+	height:900px;
+	background-size: cover;
+	background-image: url(https://p.turbosquid.com/ts-thumb/sq/3ImFg5/SR/untitled/png/1689172123/2096x1500/fit_q99/468b3f7b3be1291b7f8bbb9795d20e41122efe8d/untitled.jpg);
+}
+.body2{
+	width: 100%;
+	height: 350px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+
+}
+.text1{
+	font-family: Michroma, sans-serif;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+}
+.img2{
+	width: 200px;
+	max-height:200px;	
+	background-size:cover;
+	margin-top: 65px;
+	margin-left: 85px;
+	background-size: cover;
+}
+
+
+
+
+
+.beauty-rotate {
+  width: 240px;
+  height: 250px;
+  transition-duration: 0.3s;
+} 
+.beauty-rotate:hover {
+
+   background-size: cover;
+   transform: scale(1.3);
+}
+
+.beauty-rotate {
+  width: 240px;
+  height: 250px;
+  transition-duration: 0.3s;
+} 
+.beauty-rotate:hover {
+
+   background-size: cover;
+   transform: scale(1.3);
+
+}
+
+
+.underline-one {
+	color: white; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.logo:hover {
+  transform: scale(1.2);
+}     
+.body3{
+	width: 100%;
+	height: 280px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+/* Общие стили */
+*, *:after, *:before { 
+	border-box; 
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 35px auto;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display:block;
+	overflow: hidden;
+	background: black;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+	background: #527c82;
+}
+figure.effect-text-three img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+figure.effect-text-three h4 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.2em 0;
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+figure.effect-text-three:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+figure.effect-text-three:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+h5{
+	text-align: center;
+	font-family: Arial Black;
+}
+p{
+	text-align: center;
+	font-family: Arial Black;
+	font-size: 16px;
+	color: white;
+}
+.body4{
+	width: 100%;
+	height: 570px;
+	background-color: black;
+	justify-content: center;
+}
+.container {
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.container {
+    text-align: center;
+  }
+   .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+.podval{
+	margin-top: 75px;
+	width: 100%;
+	height: 180px;
+	background-color: red;
+	justify-content: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #333333;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("img/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
